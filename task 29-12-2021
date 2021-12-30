@@ -1,0 +1,126 @@
+class account {
+     constructor(name,accno,balance) {
+    this.name = name;
+    this.accno = accno;
+    this.balance = balance;
+    
+}
+getBalance() {
+    return 'The balance is: ₹${this.balance}';
+}
+withdraw(amount) {
+    if(this.balance >= amount) {
+        this.balance = this.balance - amount;
+        return this.getBalance();
+    }else 
+     return 'insufficient balance. ${this.getBalance()}';
+
+}
+
+}
+ 
+ 
+ const avinash = new account("avinash",4570,100000);
+ 
+ console.log(avinash);
+ 
+ console.log(avinash.balance-50000);
+ console.log(avinash.withdraw(50000));
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class acc {
+     constructor(name,accno,balance) {
+    this.name = name;
+    this.accno = accno;
+    this.balance = balance;
+    
+}
+getBalance() {
+    return 'The balance is: ₹${this.balance}';
+}
+deposit(amount) {
+    if(this.balance >= amount) {
+        this.balance = this.balance - amount;
+        return this.getBalance();
+    }else {
+     return 'insufficient balance. ${this.getBalance()}';
+
+}
+}
+}
+ 
+ 
+ const ashok = new account("ashok",4570,100000);
+ 
+ 
+ 
+ 
+ console.log(ashok);
+ console.log(ashok.balance+(50000));
+ console.log(ashok.withdraw(50000));
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ //task 2
+ 
+ const getcountries = () => {
+    console.log('getttingg countriesss.......');
+    //creating the request
+   const Xhr = new XMLHttpRequest();
+   Xhr.open("get". "https://restcountries.com/v2/all");
+   Xhr.send();
+
+   Xhr.responsetype = "json";
+
+
+Xhr.onload = () => {
+
+    const data = xhr.Response;
+    const countryname = countries.map(country) => country.name.common);
+    const countryspanish = countries.map(country) => country.spanish.common);
+    const countrypeople = countries.map(country) => country.people=100000.common);
+    console.log("full data", countries, countryname);
+};
+
+
+
+
+};
+getcountries();
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
